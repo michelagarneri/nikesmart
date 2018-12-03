@@ -1,0 +1,681 @@
+/* ------------------ BODY -------------------- */
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(to right, #FDFBFB 0%, #868888 100%);
+    background-repeat:no-repeat;
+}
+
+/* ------------------ NAVBAR -------------------- */
+    
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.navbar-items { /* main container */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links-right { /* menu entries a destra */
+    display: flex;
+    align-items: center;
+}
+
+.links-center { /* menu entries al centro */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link { /* menu entries */
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+
+.navbar a { /* remove formatting from links */
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+    color: #6f6f6f;
+}
+
+.ilbottone { /* preorder button in navbar */
+    display:inline-block;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ilbottone a { 
+    color: white;
+    line-height: 40px;
+}
+
+.unbottone { /* preorder button */
+    display:inline-block;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.unbottone a { 
+    color: white;
+    line-height: 40px;
+}
+
+/* ------------------ SLIDESHOW -------------------- */
+.slideshow-container { /* slideshow container */
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mySlides { /* hide the images by default */
+    display: none;
+}
+
+.mySlides img {vertical-align: middle;} 
+
+.prev, .next { /* next & previous buttons */
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.next { /* position the "next button" to the right */
+  right: 0;
+}
+
+/* ------------------ H1 H2 H3 -------------------- */
+h1 {
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+/* ------------------ SECTIONS -------------------- */
+.block { /* sections */
+    margin-top: 80px;
+}
+
+/* ------------------ SECTIONS: features -------------------- */
+
+.elements {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.features-block { /* features section */
+    text-align: center;
+    max-width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.block-of-text { /* features text */
+    text-align: center;
+}
+
+/* ------------------ SECTIONS: vision -------------------- */
+.vision-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 800px;
+}
+
+/* ------------------ SECTIONS: products -------------------- */
+.products-buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.prezzo {
+    color: dimgray;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.images { /* product images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+/* Style the tab */
+.tabelements {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 70%;
+    margin: auto;
+}
+
+.tabelements img {
+    width: 350px;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+    display:inline-block;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
+.block-of-text {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.tab {
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab button {
+    margin: 10px;
+}
+
+/* ------------------ GO TO TOP BUTTON -------------------- */
+
+.back-to-top { 
+    background: none;
+    margin: 0; 
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    width: 70px; 
+    height: 70px; 
+    z-index: 100; 
+    text-decoration: none; 
+    color: black;
+    background-color: none; 
+} 
+ 
+.back-to-top i {
+     font-size: 30px;
+}
+
+/* ------------------ FOOTER -------------------- */
+footer {
+    width: 100%;
+    height: 10%vh;
+    background-color: rgb(20, 18, 18);
+    opacity: 0.5;
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.footbox{ /* container parte superiore footer */
+    display: flex;
+    justify-content: space-around;
+}
+
+.whitelogo {
+    padding: 8px;
+}
+
+footer h3 { 
+    color: white;
+    line-height: 25px;
+}
+
+footer p {
+    color: white;
+    line-height: 25px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot { /* class generale elementi footer */
+    margin-top: 20px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.footbott { /* container parte inferiore footer */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon {
+    padding: 5px;
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+
+/* ------------------ FORM -------------------- */
+
+.form input[type=text] { /* input testo */
+    width: 30%;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.form input[type=number] { /* input numeri */
+    width: 40%;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.select-item { /* input selezione */
+    position: relative;
+    border: none;
+    margin: 10px;
+    margin-bottom: -0.5rem; /* per contrastare margin 1rem in foundatin */
+    }
+
+.form-container select { /* input selezione */
+    border-radius: 8px;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form-container { /* flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-item { /* flexbox per selezione */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+    margin: 0 auto;
+}
+
+
+.form-label { 
+    width: 150px;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.form-container img { /* icone payment mathod */
+    padding: 15px;
+}
+
+.form-unbottone { /* submit button */
+    display:inline-block;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.form-unbottone a { 
+    color: white; 
+}
+
+.payment { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 670px;
+    margin: 0 auto;
+}
+
+.form input[type=radio] { /* check box */
+    margin: 10px;
+}
+
+.form input[type=city] { /* input city with proprierties from foundation */
+    width: 9.8%;
+    border-radius: 8px;
+    margin: 10px;
+    margin-right: 0.7px;
+    display: block;
+    box-sizing: border-box;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    overflow: visible;
+}
+.form input[type=state] { /* input testo */
+    width: 9.8%;
+    border-radius: 8px;
+    margin: 10px;
+    margin-right: 0.7px;
+    display: block;
+    box-sizing: border-box;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    overflow: visible;
+}
+.form input[type=zip] { /* input testo */
+    width: 9.8%;
+    border-radius: 8px;
+    margin: 10px;
+    margin-right: 0px;
+    display: block;
+    box-sizing: border-box;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    overflow: visible;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+
+/* ------------------ TEAM -------------------- */
+
+
+.team p {
+    text-align: center;
+}
+
+.team {
+    margin-bottom: 80px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.announce {
+    margin-top: 80px;
+}
+
+.announce a {
+    color: black;
+    line-height: 35px;
+}
+
+.team hr {
+    border-color: black;
+    width: 50%;
+    margin-top: -2px;
+    padding: 0;
+    z-index: 90;
+}
+
+.team img {
+    width: 380px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+/* ------------------ MEDIA QUERY -------------------- */
+
+/* Navbar */
+@media only screen and (max-width: 768px) {
+    .navbar-items,
+    .navbar{
+        flex-direction: column;
+    }
+    
+@media only screen and (max-width: 768px) {
+    .ilbottone,
+    .navbar input[type=text]{
+        display: none;
+    }
+    
+/* Slideshow */
+@media only screen and (max-width: 768px) {
+  .prev, .next,.text {font-size: 11px}
+}
+ 
+/* Footer */
+@media only screen and (max-width: 768px) {
+    .footbox {
+        flex-direction: column;
+    }
+    
+/* Features */
+@media only screen and (max-width: 768px) {
+    .elements {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .features-block {
+        max-width: 90%;
+        align-self: center;
+    }
+    
+/* Products */
+@media only screen and (max-width: 768px) {
+    .tabelements {
+        flex-direction: column;
+    }
+
+
+/* Typography */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+/* Top Margins */
+@media only screen and (max-width: 768px) {
+    navbar {
+        margin-bottom: 5px;
+    }
+    .block {
+        margin-top: 50px;
+    }
+    .vision-img img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .features-block {
+        margin-top: 15px;
+    }
+    .products-buttons {
+        margin-top: 15px;
+    }
+    .unbottone {
+        height: 25px;
+    }
+    .unbottone a { 
+    line-height: 25px;
+    }
+   .footbox{
+        margin-left: 10px;
+    }
+
+/* Form - lateral margins */
+@media only screen and (max-width: 768px) {
+    .form {
+    width: 90%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;}
+}
+    
+/* Form  */
+@media only screen and (max-width: 768px) {
+   .container-item {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;}
+   .form-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;}
+    .form input[type=text] {
+        width: 100%;}
+    .form input[type=number] {
+        width: 30%;}
+    .form input[type=city] {
+        width: 100%;}
+    .form input[type=state] {
+        width: 100%;}
+    .form input[type=zip] {
+        width: 100%;}
+    .form-label {
+        text-align: center;
+    }
+}
+
+/* Team */
+@media only screen and (max-width: 768px) {
+    .team {
+    flex-direction: column;}
+}
+
+

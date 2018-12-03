@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en-EN">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="img/favicon2.png" />
+		
+		<title>Nike Smart E-commerce - Preorder form</title>
+		<meta name="description" content="Preorder your Nike Smart smartwear now!">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<!--		 Foundation for grid -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+		
+		<!-- Meyer to reset css -->
+		<link href="css/meyer_reset.css" rel="stylesheet" type="text/css" media="all">
+		
+		<!-- Styles & Fonts -->
+		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,700i,900&amp;subset=latin-ext" rel="stylesheet">
+
+	</head>
+
+	<body>
+     
+        <header>
+            <div class="navbar"> 
+               <nav class="navbar-items">   <!--contenitore a cui è applicato flexbox--> 
+                    <div class="logo"> 
+                        <a href="Index.html"><img id="logo" src="img/logo-nike-smart.png" alt="logo nike smart" width="180px"></a>
+                    </div>
+
+                    <div class="links-center">
+                        <div class="navbar-link">
+                            <a href="Index.html#features">Features</a>    
+                        </div>
+                        <div class="navbar-link">
+                            <a href="Index.html#products">Products</a>    
+                        </div>
+                        <div class="navbar-link">
+                            <a href="Index.html#vision">Vision</a>    
+                        </div>
+                        <div class="navbar-link">
+                            <a href="team.html">Team</a>    
+                        </div>
+                    </div>
+
+                    <div class="links-right">
+                        <div class="navbar-link">
+                           <div class="ilbottone">
+                                <a href="Form.html">Preorder</a>
+                            </div>    
+                        </div>
+                        <div class="navbar-link">
+                            <input type="text" placeholder="Search">    
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>     
+      
+      <h1><u>PREORDER FORM</u></h1>
+      
+    <form action="http://www.example.com/preorder.php" method="post" name="preorder"> <!--URL for the page on the server that will receive the information in the form when it is submitted -->
+        <div class="form">   
+            <div class="form-container"> <!--flex-->
+                <label for="fullname" class="form-label">Full Name *</label>
+                <input type="text" placeholder="Name and last name">
+            </div>
+            <div class="form-container">
+                <label for="email" class="form-label">Email *</label>
+                <input type="text" placeholder="email">
+            </div>
+            
+            <div class="form-container">
+                <label for="address" class="form-label">Address *</label>
+                <input type="text" placeholder="Address">
+            </div>
+            
+            <div class="form-container address">
+                <label for="city, state, zip" class="form-label">City, State, ZIP *</label>
+                <input type="city" placeholder="City">
+                <input type="state" placeholder="State">
+                <input type="zip" placeholder="ZIP">
+            </div>
+            
+            
+            
+            <div class="container-item">
+                <div class="form-container">
+                    <label for="item" class="form-label">Item *</label>
+                    <div class="select-item"> 
+                        <select name="item">
+                            <option value="sweater-man">Sweater - MAN</option> <option value="tshirt-man">T-shirt - MAN</option> <option value="shorts-man">Shorts - MAN</option> <option value="shoes-man">Shoes - MAN</option>
+                            <option value="sweater-woman">Sweater - WOMAN</option> <option value="tshirt-woman">T-shirt - WOMAN</option> <option value="shorts-woman">Shorts - WOMAN</option> <option value="shoes-woman">Shoes - WOMAN</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="item" class="form-label">Quantity *</label>
+                    <input type="number" placeholder="Q.ty">
+                </div>
+            </div>
+            
+            <div class="form-container payment">
+                <label for="item" class="form-label">Payment method *</label>
+                <input type="radio" name="payment method" value="Visa" checked="checked" /> <img src="img/029-visa.png" alt="visa">
+                <input type="radio" name="payment method" value="PayPal" checked="checked" /> <img src="img/004-paypal.png" alt="pay pal">
+            </div>
+            <div class="form-container">
+                <div class="form-unbottone">Submit</div>
+            </div>
+
+        </div>
+    </form>
+    
+    		<footer>
+
+            <div class="footbox"> 
+                <div class="foot item0">
+                    <h3>NIKE SMART ©</h3>
+                    <p>A project developed by</p>
+                    <div class="whitelogo"><img src="img/nike-logo-white120px.png" alt="logo nike white" ></div>
+                    <p><a href="https://www.nike.com/gb/en_gb/">visit www.nike.com</a></p>
+                </div>
+                
+                <div class="foot item1">
+                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    <h3>STUDENTS DISCOUNT</h3>
+                    <h3>ATHLETS DISCOUNT</h3>
+                    <h3>ABOUT PREORDER</h3>
+                    <h3>INFO</h3>
+                </div>
+                
+                <div class="foot item2">
+                    <h3>ABOUT US</h3>
+                    <p>News</p>
+                    <p>Work with us</p>
+                    <p>Investors</p>
+                    <p>Sustainability</p>
+                </div> 
+            </div>
+            
+            <hr/>
+                
+            <div class="footbott">
+               <div class="foot item3">
+                  <p><b>UK</b> © 2018 Nike, Inc. All Rights Reserved </p>
+               </div> 
+               <div class="foot item4">
+                 <div class="social">
+                      <div class="socialicon"><a href="https://www.facebook.com/nike"><i class="fab fa-facebook-square" style="color: white;"></i></a></div>
+                      <div class="socialicon"><a href="https://www.instagram.com/nike/"><i class="fab fa-instagram" style="color: white;"></i></a></div>
+                      <div class="socialicon"><a href="https://twitter.com/nike"><i class="fab fa-twitter" style="color: white;"></i></a></div>
+                </div>
+               </div> 
+            </div>
+	
+	</footer>
+	
+    <!-- Back to top -->
+    <a href="Form.html" class="back-to-top" style="display: inline;">
+    <i class="fas fa-angle-double-up"></i></a>  
+
+	</body>
+	
+
+</html>
